@@ -18,10 +18,24 @@
                     <ColumnDefinition/>
 
                 </Grid.ColumnDefinitions>
-                <Label Grid.Row="0" Grid.Column="0" HorizontalAlignment="Right" Content="Nombre:"/>
-                <TextBox Grid.Row="0" Grid.Column="1" Margin="2" x:Name="nombreTextBox"/>
-                <Label Grid.Row="1" Grid.Column="0" Content="Fecha:" HorizontalAlignment="Right"/>
-                <DatePicker Grid.Row="1" Grid.Column="1" Margin="2" x:Name="fechaDatePicker"/>
+                <Label Grid.Row="0"
+                       Grid.Column="0" 
+                       HorizontalAlignment="Right"
+                       Content="Nombre:"/>
+                <TextBox Grid.Row="0"
+                         Grid.Column="1"
+                         Margin="2"
+                         x:Name="nombreTextBox" 
+                         Text="{Binding Title}"/>
+                <Label Grid.Row="1" 
+                       Grid.Column="0"
+                       Content="Fecha:" 
+                       HorizontalAlignment="Right"/>
+                <DatePicker Grid.Row="1"
+                            Grid.Column="1" 
+                            Margin="2"
+                            x:Name="fechaDatePicker" 
+                            SelectedDate="{Binding Date}"/>
 
             </Grid>
         </GroupBox>
